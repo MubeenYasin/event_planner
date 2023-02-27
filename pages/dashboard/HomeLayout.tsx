@@ -1,22 +1,13 @@
-import React, { useState } from 'react'
+import { auth } from '../../config/firebase'
 
 const HomeLayout = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
-
-  const createUser = () => {
-
-  }
   return (
     <div>
 
-      <div>
-        <input type='emailjh' placeholder={'Email'} value={email} onChange={(e) => setEmail(e.target.value)}  />
-        <input type='password' placeholder={'Password'} value={password} onChange={(e) => setPassword(e.target.value)}  />
-
-        <button onClick={createUser}>Sign Up</button>
-      </div>
-      HomeLayout
+        Home Layout Dashboard
+        <hr />
+        <div> {auth.currentUser?.email}</div>
+        Sign Up Successfully
 
 
     </div>
