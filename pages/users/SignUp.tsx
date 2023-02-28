@@ -23,7 +23,7 @@ const SignUp = () => {
   return (
 
       <div className=''>
-        <input type='emailjh' placeholder={'Email'} value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input type='text' placeholder={'Email'} value={email} onChange={(e) => setEmail(e.target.value)} />
         <input type='password' placeholder={'Password'} value={password} onChange={(e) => setPassword(e.target.value)} />
 
         <button onClick={createUser}>Sign Up</button>

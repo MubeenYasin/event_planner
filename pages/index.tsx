@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Nave from '../components/header/Nave'
 import HomeLayout from './dashboard/HomeLayout'
 import SignIn from './users/SignIn'
 import SignUp from './users/SignUp'
